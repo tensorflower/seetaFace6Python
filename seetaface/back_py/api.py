@@ -15,7 +15,7 @@ if "windows" in platform_name:
     LIB_PATH = os.path.join(API_DIR,"lib","win")
     os.environ["PATH"] += os.pathsep + LIB_PATH
     dll = CDLL(os.path.join(LIB_PATH, "libFaceAPI.dll"))
-elif "ubuntu" in platform_name:
+elif "ubuntu" in platform_name or "debian" in platform_name:
     LIB_PATH = os.path.join(API_DIR,"lib","ubuntu")
     dll = CDLL(os.path.join(LIB_PATH, "libFaceAPI.so"))
 elif "centos" in platform_name:
