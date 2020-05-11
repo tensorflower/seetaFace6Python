@@ -8,7 +8,7 @@
 `10分钟搞定`是夸张说法，但本次项目基本涵盖了普通商用人脸识别所需的大部分功能，并且使用简单。
 ### 支持 windows/linux 下的所有python 版本
 #### &ensp;&ensp;python3.5及以下版本的python需要将seetaface/back_py目录下的 `api.py` 和 `face_struct.py` 两个文件放到setaface目录下，替换setaface目录下的`api.py` 和 `face_struct.py` 文件
-##2.下载模型（已下载则忽略）
+## 2.下载模型（已下载则忽略）
 百度网盘：https://pan.baidu.com/share/init?surl=LlXe2-YsUxQMe-MLzhQ2Aw 提取码：ngne  
 将下载的所有 *.csta 模型文件 放入 `seetaFace6Python/seetaface/model` 目录下
 
