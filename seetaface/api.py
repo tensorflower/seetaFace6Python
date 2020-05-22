@@ -19,7 +19,7 @@ elif "ubuntu" in platform_name or "debian" in platform_name:
     dll = CDLL(os.path.join(LIB_PATH, "libFaceAPI.so"))
 elif "centos" in platform_name:
     LIB_PATH = os.path.join(API_DIR,"lib","centos")
-    dll = CDLL(os.path.join(LIB_PATH, "libFaceAPI.so"))
+    dll = CDLL(os.path.join(LIB_PATH, "libSeetaFaceAPI.so"))
 else:
     print("Unsupported platform:{}".format(platform_name))
     exit()
@@ -184,7 +184,11 @@ class SeetaFace(object):
         self.InitEngine.argtypes = (c_int32,)
 
     def _init_engine(self):
+        cwd = os.getcwd()
+        os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/../")
         self.InitEngine(self._init_mask)
+        os.chdir(cwd)
+        
 
     def Track(self, frame: np.array) -> SeetaTrackingFaceInfoArray:
         """

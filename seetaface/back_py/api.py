@@ -192,7 +192,10 @@ class SeetaFace(object):
         self.InitEngine.argtypes = (c_int32,)
 
     def _init_engine(self):
+        cwd = os.getcwd()
+        os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/../")
         self.InitEngine(self._init_mask)
+        os.chdir(cwd)
 
     def Track(self, frame):
         """
