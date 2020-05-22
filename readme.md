@@ -1,4 +1,4 @@
-# **seetaFace6 python api(10分钟完成搞定商业级别人脸识别应用)**
+# **seetaFace6 python api(10分钟搞定商业级别人脸识别应用)**
 
 ## 1. 简介
 
