@@ -53,7 +53,7 @@ if video_cap.isOpened():
             print(detect_result)
             for i in range(detect_result.size):
                 face = detect_result.data[i].pos
-                points = seetaFace.mark5(image, face)
+                points = seetaFace.mark5(frame, face)
                 # 0: 真实人脸
                 # 1: 攻击人脸（假人脸）
                 # 2: 无法判断（人脸成像质量不好）
