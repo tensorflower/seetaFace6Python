@@ -307,7 +307,7 @@ class SeetaFace(object):
         """
         self.check_init(LANDMARKER5)
         seetaImageData = get_seetaImageData_by_numpy(frame)
-        points = (SeetaPointF * 5)((1.0,1.0),(9.0,1.0),(5.0,5.0),(3.0,10.0),(7.0,10.0))
+        points = (SeetaPointF * 5)()
         self._mark5(seetaImageData, face, points)
         return points
 
