@@ -350,7 +350,6 @@ class SeetaFace(object):
         :return: [256*256*c]
         """
         seetaImageData = get_seetaImageData_by_numpy(frame)
-        points = (SeetaPointF * 5)()
         out_seetaImageData = self._CropFace(seetaImageData, points)
         return get_numpy_by_seetaImageData(out_seetaImageData)
 
