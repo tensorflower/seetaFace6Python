@@ -421,7 +421,7 @@ class SeetaFace(object):
         :return:
         """
         face_encoding = (
-            np.frombuffer(string_at(feature, 1024 * 4), dtype=np.int32))
+            np.frombuffer(string_at(feature, 1024 * 4), dtype=np.float32))
         return face_encoding
 
     def get_feature_base64(self, feature: List[c_float]):
