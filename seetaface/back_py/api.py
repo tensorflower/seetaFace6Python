@@ -341,7 +341,7 @@ class SeetaFace(object):
         points：5关键点数组
        face_mask： 如戴口罩时 基本会返回数组【0，0，1，1，1】，0：没被遮挡  1：被遮挡
         """
-        self.check_init(LANDMARKER68)
+        self.check_init(LANDMARKER_MASK)
         seetaImageData = get_seetaImageData_by_numpy(frame)
         points = (SeetaPointF * 5)()
         face_mask = (c_int32 * 5)()
