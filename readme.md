@@ -14,6 +14,7 @@
 
 ## 3. 运行示例
 ### 3.1 运行依赖
+当前需要机器同时支持以下几个指令集 AVX | SSE | FMA ，请先确认机器是否同时支持它们
 
 &ensp;&ensp;&ensp;&ensp;示例依赖 `opencv` ,安装`opencv`(若已有cv2模块则忽略)
 
@@ -40,6 +41,7 @@
         sudo ldconfig
     
 ``` 
+
 
 
 ```key
